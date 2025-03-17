@@ -4,42 +4,48 @@ body{
 .navbar{
     display:flex;
     color:white;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 10px 20px;
 }
+.logo:hover{
+    cursor:pointer;
+}
 .nav-links {
     position:absolute;
-    left:50%;
-    transform: translateX(-50%);
+    left:50%; /*moves words to the middle of the screen*/
+    transform: translateX(-50%); /*if only this, does not stay in viewport in small windows*/
     font-size:20px;
 }
 .nav-links ul{
     display:flex;
-    list-style-type: none;
+    list-style-type: none; /*get rid of bullet points*/
     margin:0px;
-    padding:0;
+    padding:0px;
 }
 .nav-links li{
-    margin:0px 50px;  
+    margin:0px 50px;  /*spreads the words apart*/
 }
-.dropdown {
+.nav-links li:hover{ /*larger text when hovering cursor over*/
+    transform:scale(1.1);
+    cursor:pointer;
+}
+.dropdown { /*make dropdown-menu relative to the text*/
     position:relative;
 }
 .dropdown-menu {
-    display: none;
+    display: none; /*dropdown menu isn't visible*/
     position:absolute;
     top:100%; /*position directly below the 'Profile' */
-    left:0;
+    left:0px;
     background-color: gray;
+    font-size:11px;
+    font-family:'Times New Roman',sans-serif;
     list-style-type: none;
-    padding:0;
-    margin:0;
-    min-width:150px;
+    padding:0px 8px;
+    margin:0px;
+    min-width:70px; /*size of the box*/
     z-index:1; /*make the dropdown appear above other content */
-}
-.dropdown-menu li{
-    padding:10px;
 }
 
 .dropdown:hover .dropdown-menu {
