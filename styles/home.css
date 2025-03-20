@@ -1,6 +1,7 @@
 body{
     background-color:#3A3735
 }
+
 .navbar{
     display:flex;
     color:white;
@@ -31,26 +32,33 @@ body{
     transform:scale(1.1);
     cursor:pointer;
 }
-.dropdown { /*make dropdown-menu relative to the text*/
+
+
+.dropdown {/*make dropdown-menu relative to the text*/
     position:relative;
+    display:inline-block;
 }
 .dropdown-menu {
     display: none; /*dropdown menu isn't visible*/
+    list-style-type: none;
     position:absolute;
     top:100%; /*position directly below the 'Profile' */
     left:0px;
-    background-color: #599593;
-    font-size:9px;
-    font-family: Helvetica, 'Times New Roman';
-    list-style-type: none;
-    padding:0px 8px;
+    background-color:blue;
+    text-align:center;
     margin:0px;
-    min-width:70px; /*size of the box*/
-    z-index:1; /*make the dropdown appear above other content */
+    font-size:9px;
+    min-width:90px;
+    overflow-y:auto;
 }
 
 .dropdown .dropdown-menu #dropdown-item:hover{
     color:gold;
+    background-color: #599593;
+    font-family: Helvetica, 'Times New Roman';
+    padding:3px 8px 3px;
+    min-width:70px; /*size of the box*/
+    z-index:1; /*make the dropdown appear above other content */
 }
 
 .dropdown:hover .dropdown-menu {
