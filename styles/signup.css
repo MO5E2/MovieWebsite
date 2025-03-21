@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    position: relative;
+    background-color: red;
+  }
+  
+  .ticket {
+    background-image: url("/images/Ticket.svg");
+    z-index: 1; /* Lower layer */
+    background-color: purple;
+    padding: 50px;
+  }
+  
+  .box {
+    z-index: 2; /* Above the ticket */
+    background: white; /* Ensure visibility */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: blue;
+  }
