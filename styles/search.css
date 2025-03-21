@@ -2,7 +2,6 @@ body{
     background-color:#3A3735;
     font-family: Helvetica, sans-serif;
     color:white;
-    text-align: center;
 }
 
 /*NAVIGATION BAR*/
@@ -37,8 +36,6 @@ body{
     transform:scale(1.1);
     cursor:pointer;
 }
-
-
 .dropdown {/*make dropdown-menu relative to the text*/
     position:relative;
     display:inline-block;
@@ -73,39 +70,34 @@ body{
  /*END OF NAVIGATION BAR*/
 
 
- /*API IMPORT TRENDING*/
- .card {
-    background-color: burlywood;
-}
 
-#movies {
+
+ /*API IMPORT TRENDING*/
+
+#trending-movies {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .movie_item {
-    margin: 1rem; /*space between top movie and bottom movies*/
+    margin: 0rem; /*space between top movie and bottom movies*/
     text-align: center;
-    color:green; /*title and release text color*/
+    color:white; /*title and release text color*/
+    font-weight:bolder;
+    font-stretch:narrower;
     font-size: 25px; /*size of title and release text*/
-    max-width:500px;
-    background-color:blue;
+    max-width:430px;
+    padding:0px;
 }
-/*change size of the movie img*//*
-.movie_img_rounded{ 
-    transform: scale(0.8,0.8);
-}
-*/
+
 .title {
-    padding-top:16px;
-    background-color: orange;
+    margin-top:-20px;
 }
-.release {
-    padding-bottom:16px;
-    background-color:darkorange;
-}
+
 .movie_img_rounded {
-    border-radius:3rem;
+    width:100%;
+    border-radius:1.5rem;
+    transform: scale(0.8,0.8); /*change size of the movie img*/
 }
  /*END OF API IMPORT TRENDING*/
