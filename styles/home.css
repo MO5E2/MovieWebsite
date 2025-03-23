@@ -1,5 +1,7 @@
 body{
-    background-color:#3A3735
+    background-color:#3A3735;
+    font-family: Helvetica, sans-serif;
+    color:white;
 }
 
 /*NAVIGATION BAR*/
@@ -68,3 +70,40 @@ body{
     display:grid; /*not block*/
 }
  /*END OF NAVIGATION BAR*/
+
+
+
+  /*API IMPORT TRENDING*/
+
+#trending-movies {
+    display:inline-flex;
+    padding-left:5px;
+}
+
+#top-movies {
+    display:Inline-flex;
+    padding-left:5px;
+}
+
+.movie_item {
+    justify-content: center;
+    margin: 1rem 1rem; /*margin(top, right, bottom, left)*/
+    text-align: center;
+    color:white; /*title and release text color*/
+    font-weight:bolder;
+    font-stretch:narrower;
+    font-size: 20px; /*size of title and release text*/
+    width:220px;
+    padding:0px;
+}
+
+.title {
+    margin-top:0px;
+}
+
+.movie_img_rounded {
+    width:100%;
+    border-radius:1.5rem;
+    /*transform: scale(0.8,0.8);*/ /*change size of the movie img*/
+}
+ /*END OF API IMPORT TRENDING*/

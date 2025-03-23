@@ -2,6 +2,7 @@ body{
     background-color:#3A3735;
     font-family: Helvetica, sans-serif;
     color:white;
+    text-align: center;
 }
 
 /*NAVIGATION BAR*/
@@ -77,27 +78,29 @@ body{
 #trending-movies {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 4rem;
 }
 
 .movie_item {
-    margin: 0rem; /*space between top movie and bottom movies*/
+    justify-content: center;
+    margin: 1rem 2rem; /*margin(top, right, bottom, left)*/
     text-align: center;
     color:white; /*title and release text color*/
     font-weight:bolder;
     font-stretch:narrower;
     font-size: 25px; /*size of title and release text*/
-    max-width:430px;
+    max-width:400px;
     padding:0px;
 }
 
 .title {
-    margin-top:-20px;
+    margin-top:0px;
 }
 
 .movie_img_rounded {
     width:100%;
     border-radius:1.5rem;
-    transform: scale(0.8,0.8); /*change size of the movie img*/
+    /*transform: scale(0.8,0.8);*/ /*change size of the movie img*/
 }
  /*END OF API IMPORT TRENDING*/
