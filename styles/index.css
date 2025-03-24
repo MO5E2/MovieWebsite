@@ -72,15 +72,20 @@ a {
     font: 1.3rem "Anton", sans-serif;
     text-transform: uppercase;
     width: 5rem;
+    height: 2rem;
     padding: .07rem;
     text-align: center;
     border: solid;
     border-width: .2rem;
     border-color: var(--GRAY);
     border-radius: .5rem;
+    color: var(--GRAY);
+    text-decoration: none;
 }
 
-
+a:hover {
+    font-size: 1.5rem;
+}
 
 
 
