@@ -2,6 +2,9 @@
 
   /*paste api above*/
 
+const apiUrl = `https://api.themoviedb.org/3/trending/all/week?`;
+const moviesContainer = document.getElementById("trending-movies");
+
   async function fetchMovies() {
     try {
       const response = await fetch(apiUrl, options);

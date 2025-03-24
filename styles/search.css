@@ -18,6 +18,11 @@ body{
 .logo:hover{
     cursor:pointer;
 }
+.search{
+    position:absolute;
+    left:80%;
+    font-size:20px;
+}
 .nav-links {
     position:absolute;
     left:50%; /*moves words to the middle of the screen*/

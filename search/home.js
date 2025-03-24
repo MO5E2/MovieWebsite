@@ -1,8 +1,10 @@
 /*defines method and provides api key within the fetch() function*/
+
+    /*paste api above*/
+
   const trendingUrl = `https://api.themoviedb.org/3/trending/all/week?`;
   const trendingContainer = document.getElementById("trending-movies");
   
-    /*paste api above*/
   
     async function fetchTrending() {
       try {
@@ -35,7 +37,7 @@
     fetchTrending();
 
 
-    /*END OF TRENING MOVIES     START OF TOP MOVIES*/
+    /*END OF TRENDING MOVIES     START OF TOP MOVIES*/
 
     const topUrl = `https://api.themoviedb.org/3/movie/top_rated`;
     const topContainer = document.getElementById("top-movies");
@@ -70,3 +72,38 @@
         return topMovieCard;
     }
     fetchTop();
+
+    /*END OF TOP MOVIES     START OF SEARCH MOVIES*/
+
+    const searchUrl=`https://api.themoviedb.org/3/search/movie?query=${search-item}`;
+    const searchContainer = document.getElementById("search-item");
+  
+  
+    document.getElementById("query").onclick = async function fetchSearch() {
+      try {
+        const response = await fetch(searchUrl, options);
+        const data = await response.json();
+    
+        data.results.forEach((media) => {
+          const searchMovieCard = createSearchMovieCard(media);
+          searchContainer.appendChild(searchMovieCard);
+        });
+      } 
+      catch (error) {
+          console.error("Error fetching data:", error);
+      }
+    }
+    
+    function createSearchMovieCard(media) {
+      const { title, name, backdrop_path} = media;
+    
+      const searchMovieCard= document.createElement("div");
+      searchMovieCard.classList.add("movie_item")
+    
+      searchMovieCard.innerHTML = `
+        <img src="https://image.tmdb.org/t/p/w500/${backdrop_path}" class="movie_img_rounded">
+        <div class = "title">${title || name}</div>
+        `;
+        return searchMovieCard;
+    }
+    fetchSearch();
