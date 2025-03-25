@@ -87,6 +87,20 @@ body{
     margin-left: 4rem;
 }
 
+#movies {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 4rem;
+}
+
+#tvShows {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 4rem;
+}
+
 .movie_item {
     justify-content: center;
     margin: 1rem 2rem; /*margin(top, right, bottom, left)*/

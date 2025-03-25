@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="/styles/search.css">
+</head>
+<body>
+        <!--NAVIGATION BAR-->
+        <header class="navbar">
+            <div class="logo">
+                <a href="home.html" style="text-decoration:none;color:white">
+                <h1>Movie Site</h1>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <a href="home.html" style="text-decoration:none;color:white">
+                    <li>Home</li>
+                    </a>
+                    <li class="dropdown">
+                        <a href="search.html" style="text-decoration:none;color:white">
+                            Browse
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#">
+                                <h1>Trending</h1>
+                            </a>
+                            <a href="#">
+                                <h1>Movies</h1>
+                            </a>
+                            <a href="#">
+                                <h1>TV Shows</h1>
+                            </a>
+                        </div></li>
+                    <li class="dropdown">
+                        Profile
+                        <div class="dropdown-menu">
+                            <a href="profile.html style=text-decoration:none;color:#242424">
+                            <h1>Account</h1>
+                            </a>
+                            <a href="#">
+                            <h1>Settings</h1>
+                            </a>
+                            <a href="#">
+                            <h1>Log Out</h1>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <label>Search:</label>
+                <input type="text" id="search-item">
+            </div>
+        </header>
+        <!--END OF NAVIGATION BAR-->
+    
+        <!--MOVIES-->
+        <h1> Discover Movies</h1>
+        <div id="movies"></div>
+        <!--END OF MOVIES-->
+    
+    
+        <script src="/search/movies.js"></script>
+</body>
+</html>

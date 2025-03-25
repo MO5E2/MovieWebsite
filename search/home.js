@@ -1,5 +1,7 @@
 /*defines method and provides api key within the fetch() function*/
 
+const apiKey = `eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NWQ2MWQ3NzNkMTMzYjI2YWRiM2MwY2U2ODQzNmE4YSIsIm5iZiI6MTc0MjQxMjk1Mi41MjQ5OTk5LCJzdWIiOiI2N2RiMWM5ODhhZjQ1MmYzMGZlOWQwMTMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.XeV45F5ItmZeiv7r4ga9--hjwIyO7fB2f8AUTe_RbVY`;
+
     /*paste api above*/
 
   const trendingUrl = `https://api.themoviedb.org/3/trending/all/week?`;
